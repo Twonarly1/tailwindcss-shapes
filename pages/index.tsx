@@ -263,6 +263,15 @@ const Home: NextPage = () => {
       <div className="flex">
         {cutDiamond} <Copy toCopy={cutDiamond.props.children} />
       </div>
+      <footer className=" text-black mt-32">
+        Made by{" "}
+        <a
+          className="underline"
+          href="https://github.com/Twonarly1/tailwindcss-shapes"
+        >
+          Twonarly
+        </a>
+      </footer>
     </div>
   );
 };
