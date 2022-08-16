@@ -3,6 +3,16 @@ import Head from "next/head"
 import Copy from "../components/Copy"
 
 const Home: NextPage = () => {
+    const pentagon: any = (
+        <code className="code">
+            &lt;div className="w-[100px]"&gt; &lt;div className="relative border-b-[50px]
+            border-l-[50px] border-l-transparent border-r-[50px]
+            border-r-transparent"&gt;&lt;&#x002F;div&gt; &lt;div className="rotate-180 pr-[50px]
+            border-b-[50px] border-l-[25px] border-l-transparent border-r-[25px] border-b-gray-200
+            border-transparent"&gt;&lt;&#x002F;div&gt; &lt;&#x002F;div&gt;
+        </code>
+    )
+
     const equilateralTriangle: any = (
         <code className="code">
             &lt;div className="w-0 h-0 border-b-[86.6px] border-l-[50px] border-l-transparent
@@ -98,7 +108,7 @@ const Home: NextPage = () => {
         <code className="code">
             &lt;div className="w-[150px]"&gt; &lt;div className="border-b-[50px] border-l-[50px]
             border-l-transparent border-r-[50px] border-b-gray-200
-            border-transparent"&gt;&lt;&#x002F;div&gt; &lt;div className="w-[150px] bg-gray-200
+            border-transparent"&gt;&lt;&#x002F;div&gt; &lt;div className="bg-gray-200
             h-[50px]"&gt;&lt;&#x002F;div&gt; &lt;div className="rotate-180 border-b-[50px]
             border-l-[50px] border-l-transparent border-r-[50px] border-b-gray-200
             border-transparent"&gt;&lt;&#x002F;div&gt; &lt;&#x002F;div&gt;
@@ -124,6 +134,16 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/two.png" />
             </Head>
             <h1 className="text-4xl font-bold text-center">Tailwind css shapes</h1>
+
+            {/* pentagon */}
+            <p className="heading">Pentagon</p>
+            <div className="w-[100px]">
+                <div className="relative border-b-[50px] border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent"></div>
+                <div className="rotate-180 pr-[50px] border-b-[50px] border-l-[25px] border-l-transparent border-r-[25px] border-b-gray-200 border-transparent"></div>
+            </div>
+            <div className="flex">
+                {pentagon} <Copy toCopy={pentagon.props.children} />
+            </div>
 
             {/* equilateral triangle */}
             <p className="heading">equilateral triangle</p>
@@ -169,18 +189,17 @@ const Home: NextPage = () => {
 
             {/* hexagon */}
             <p className="heading">Hexagon</p>
-            <div className="flex">
-                <div>
-                    <div className="w-[100px] h-[50px] relative">
-                        <div className="absolute top-[25px] border-l-[50px] border-r-[50px] border-b-[25px]"></div>
-                        <div className="bottom-[25px] border-l-[50px] border-r-[50px] border-b-[25px] border-l-transparent border-r-transparent"></div>
-                    </div>
-                    <div className="w-[100px] rotate-180 h-[50px] relative">
-                        <div className="absolute top-[25px] border-l-[50px] border-r-[50px] border-b-[25px]"></div>
-                        <div className="bottom-[25px] border-l-[50px] border-r-[50px] border-b-[25px] border-l-transparent border-r-transparent"></div>
-                    </div>
+            <div className="w-[100px]">
+                <div className="h-[50px] relative">
+                    <div className="w-[100px] absolute top-[25px] border-l-[50px] border-r-[50px] border-b-[25px]"></div>
+                    <div className="bottom-[25px] border-l-[50px] border-r-[50px] border-b-[25px] border-l-transparent border-r-transparent"></div>
+                </div>
+                <div className="rotate-180 h-[50px] relative">
+                    <div className="absolute top-[25px] border-l-[50px] border-r-[50px] border-b-[25px]"></div>
+                    <div className="bottom-[25px] border-l-[50px] border-r-[50px] border-b-[25px] border-l-transparent border-r-transparent"></div>
                 </div>
             </div>
+
             <div className="flex">
                 {hexagon} <Copy toCopy={hexagon.props.children} />
             </div>
@@ -195,7 +214,7 @@ const Home: NextPage = () => {
 
             {/* trapezoid */}
             <p className="heading">trapezoid</p>
-            <div className="w-[100px] pr-[50px] border-b-[50px] border-l-[50px] border-l-transparent border-r-[50px] border-b-gray-200 border-transparent"></div>
+            <div className=" pr-[50px] border-b-[50px] border-l-[50px] border-l-transparent border-r-[50px] border-b-gray-200 border-transparent"></div>
 
             <div className="flex">
                 {trapezoid} <Copy toCopy={trapezoid.props.children} />
@@ -239,7 +258,7 @@ const Home: NextPage = () => {
             <p className="heading">Octagon</p>
             <div className="w-[150px]">
                 <div className="border-b-[50px]  border-l-[50px]  border-l-transparent border-r-[50px] border-b-gray-200 border-transparent"></div>
-                <div className="w-[150px] bg-gray-200 h-[50px]"></div>
+                <div className="bg-gray-200 h-[50px]"></div>
                 <div className="rotate-180  border-b-[50px]  border-l-[50px] border-l-transparent border-r-[50px] border-b-gray-200 border-transparent"></div>
             </div>
             <div className="flex">
@@ -255,6 +274,8 @@ const Home: NextPage = () => {
             <div className="flex">
                 {cutDiamond} <Copy toCopy={cutDiamond.props.children} />
             </div>
+
+            {/* FOOTER */}
             <footer className=" text-black mt-32">
                 Made by{" "}
                 <a className="underline" href="https://github.com/Twonarly1/tailwindcss-shapes">
