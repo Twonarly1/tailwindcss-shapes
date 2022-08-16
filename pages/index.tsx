@@ -127,6 +127,15 @@ const Home: NextPage = () => {
             &lt;div className="w-[150px] h-[100px] bg-gray-200 skew-x-12"&gt;&lt;&#x002F;div&gt;
         </code>
     )
+    const star: any = (
+        <code className="code">
+            &lt;div className="flex"&gt; &lt;div className="w-0 relative h-0 border-b-[100px]
+            border-l-[50px] border-l-transparent border-r-[50px]
+            border-r-transparent"&gt;&lt;&#x002F;div&gt; &lt;div className="-ml-[100px] mt-[30px]
+            relative w-0 h-0 border-t-[100px] border-l-[50px] border-l-transparent border-r-[50px]
+            border-r-transparent"&gt;&lt;&#x002F;div&gt; &lt;&#x002F;div&gt;{" "}
+        </code>
+    )
 
     return (
         <div className="mx-auto w-full px-6 py-12 grid grid-cols-1 justify-items-center gap-y-6 bg-violet-200">
@@ -284,6 +293,14 @@ const Home: NextPage = () => {
             <div className="w-[150px] h-[100px] bg-gray-200 skew-x-12"></div>
             <div className="flex">
                 {parallelogram} <Copy toCopy={parallelogram.props.children} />
+            </div>
+            {/* star */}
+            <div className="flex">
+                <div className="w-0 relative h-0 border-b-[100px] border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent"></div>
+                <div className="-ml-[100px] mt-[30px] relative  w-0 h-0 border-t-[100px] border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent"></div>
+            </div>
+            <div className="flex">
+                {star} <Copy toCopy={star.props.children} />
             </div>
 
             {/* FOOTER */}
