@@ -12,7 +12,6 @@ const Home: NextPage = () => {
             border-transparent"&gt;&lt;&#x002F;div&gt; &lt;&#x002F;div&gt;
         </code>
     )
-
     const equilateralTriangle: any = (
         <code className="code">
             &lt;div className="w-0 h-0 border-b-[86.6px] border-l-[50px] border-l-transparent
@@ -121,6 +120,11 @@ const Home: NextPage = () => {
             border-transparent"&gt;&lt;&#x002F;div&gt; &lt;div className="w-0 h-0 rotate-180
             border-b-[75px] border-l-[75px] border-l-transparent border-r-[75px]
             border-r-transparent"&gt;&lt;&#x002F;div&gt; &lt;&#x002F;div&gt;
+        </code>
+    )
+    const parallelogram: any = (
+        <code className="code">
+            &lt;div className="w-[150px] h-[100px] bg-gray-200 skew-x-12"&gt;&lt;&#x002F;div&gt;
         </code>
     )
 
@@ -273,6 +277,13 @@ const Home: NextPage = () => {
             </div>
             <div className="flex">
                 {cutDiamond} <Copy toCopy={cutDiamond.props.children} />
+            </div>
+
+            {/* parallelogram */}
+            <p className="heading">Parallelogram</p>
+            <div className="w-[150px] h-[100px] bg-gray-200 skew-x-12"></div>
+            <div className="flex">
+                {parallelogram} <Copy toCopy={parallelogram.props.children} />
             </div>
 
             {/* FOOTER */}
