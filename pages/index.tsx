@@ -295,6 +295,8 @@ const Home: NextPage = () => {
                 {parallelogram} <Copy toCopy={parallelogram.props.children} />
             </div>
             {/* star */}
+            <p className="heading">Star (6-point)</p>
+
             <div className="flex">
                 <div className="w-0 relative h-0 border-b-[100px] border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent"></div>
                 <div className="-ml-[100px] mt-[30px] relative  w-0 h-0 border-t-[100px] border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent"></div>
@@ -304,11 +306,12 @@ const Home: NextPage = () => {
             </div>
 
             {/* FOOTER */}
-            <footer className=" text-black mt-32">
+            <footer className="text-center text-black mt-32">
                 Made by{" "}
                 <a className="underline" href="https://github.com/Twonarly1/tailwindcss-shapes">
                     Twonarly
                 </a>
+                <div className="text-[10px]"> not associated with tailwind labs.</div>
             </footer>
         </div>
     )
