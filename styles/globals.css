@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-  .code {
-    @apply p-2 bg-gray-200 text-xs rounded max-w-2xl;
-  }
-  .heading {
-    @apply text-2xl font-light first-letter:uppercase;
-  }
+    .code {
+        @apply max-w-2xl rounded bg-gray-200 p-2 text-xs;
+    }
+    .heading {
+        @apply text-2xl font-light first-letter:uppercase;
+    }
 }
