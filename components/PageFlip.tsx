@@ -51,12 +51,12 @@ const PageFlip = () => {
     )
 
     return (
-        <div className="h-full">
+        <div className="z-50 h-full  ">
             <p className="heading mb-6 text-center">
-                Page Flip <small>(meh)</small>
+                Page Flip <small>(not animated)</small>
             </p>
 
-            <div className="mx-auto h-80 w-80 justify-center text-center text-black perspective">
+            <div className=" mx-auto h-80 w-80 justify-center text-center text-black perspective">
                 <div className="grid h-80 grid-cols-2">
                     <div onClick={() => setPage(page - 2)} className="bg-gray-200">
                         {page >= 0 && page - 1}

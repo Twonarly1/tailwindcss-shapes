@@ -21,7 +21,7 @@ const Components = () => {
             </Link>
             <h1 className="text-center text-4xl font-bold">Tailwind css components</h1>
             <CoinFlip />
-            <PageFlip />
+            {/* <PageFlip /> */}
             <CurvedText />
         </div>
     )
