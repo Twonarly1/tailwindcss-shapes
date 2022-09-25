@@ -20,7 +20,11 @@ const Myclass = plugin(function ({ addUtilities }) {
 module.exports = {
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            animation: {
+                "spin-slow": "spin 5s linear infinite",
+            },
+        },
     },
     plugins: [Myclass],
 }

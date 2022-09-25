@@ -3,6 +3,8 @@ import Head from "next/head"
 import Link from "next/link"
 import React from "react"
 import CoinFlip from "../components/CoinFlip"
+import CurvedText from "../components/CurvedText"
+import PageFlip from "../components/PageFlip"
 
 const Components = () => {
     return (
@@ -18,8 +20,9 @@ const Components = () => {
                 </header>
             </Link>
             <h1 className="text-center text-4xl font-bold">Tailwind css components</h1>
-
             <CoinFlip />
+            <PageFlip />
+            <CurvedText />
         </div>
     )
 }
