@@ -4,11 +4,12 @@ import Link from "next/link"
 import React from "react"
 import CoinFlip from "../components/CoinFlip"
 import CurvedText from "../components/CurvedText"
+import Marquee from "../components/Marquee"
 import PageFlip from "../components/PageFlip"
 
 const Components = () => {
     return (
-        <div className="mx-auto grid min-h-screen w-full grid-cols-1 justify-items-center gap-y-6 bg-violet-200 px-6 py-12">
+        <div className="mx-auto grid min-h-screen w-full grid-cols-1 justify-items-center gap-y-6 overflow-x-scroll bg-violet-200 px-6 py-12">
             <Head>
                 <title>Tailwind css components</title>
                 <meta name="description" content="Designing shapes with tailwind css." />
@@ -23,6 +24,7 @@ const Components = () => {
             <CoinFlip />
             {/* <PageFlip /> */}
             <CurvedText />
+            <Marquee />
         </div>
     )
 }

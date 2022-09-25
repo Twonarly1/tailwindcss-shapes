@@ -23,8 +23,19 @@ module.exports = {
         extend: {
             animation: {
                 "spin-slow": "spin 5s linear infinite",
+                marquee: "marquee 18s linear infinite",
+            },
+            keyframes: {
+                marquee: {
+                    "0%": {
+                        transform: "translate3d(60rem, 0, 0)",
+                    },
+                    "100%": {
+                        transform: "translate3d(-100vw, 0, 0)",
+                    },
+                },
             },
         },
     },
-    plugins: [Myclass],
+    plugins: [Myclass, require("tailwindcss-animate")],
 }

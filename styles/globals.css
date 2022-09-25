@@ -4,7 +4,7 @@
 
 @layer components {
     .code {
-        @apply max-w-2xl rounded bg-gray-200 p-2 text-xs;
+        @apply w-full rounded bg-gray-200 p-2 text-xs;
     }
     .heading {
         @apply text-2xl font-light first-letter:uppercase;

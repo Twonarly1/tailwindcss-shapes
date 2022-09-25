@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Home() {
     return (
-        <div className="h-screen space-y-12 bg-violet-200 p-12">
+        <div className="h-screen w-full space-y-12 bg-violet-200 p-12">
             <Link href="/shapes">
                 <div className="mx-auto max-w-7xl rounded-3xl py-8 px-4 ring-[8px] ring-gray-200 hover:cursor-pointer hover:bg-gray-200 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8">
                     <div className="max-w-xl">

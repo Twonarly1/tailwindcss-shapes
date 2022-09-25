@@ -51,7 +51,7 @@ const CurvedText = () => {
     }, [])
 
     return (
-        <div className="flex h-screen flex-col items-center justify-center">
+        <div className="flex h-screen flex-col items-center justify-start">
             <p className="heading mb-6 text-center">Curved Text</p>
             <div className="flex w-full items-center justify-center">
                 <div className="relative flex h-[200px] w-[200px] items-center justify-center rounded-full bg-transparent">
